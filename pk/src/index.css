@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f4f4f4; /* Изменяем цвет фона для контраста */
+    color: #222;
+    font-weight: 300;
+    font-family: Arial, sans-serif; /* Добавляем удобочитаемый шрифт */
+}
+
+.wrapper {
+    width: 80%; /* Более адаптивная ширина */
+    max-width: 1280px; /* Максимальная ширина */
+    margin: 50px auto;
+}
+
+header ul.nav {
+    float: right;
+    list-style: none;
+}
+
+header ul.nav li {
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+
+header ul.nav li a {
+    text-decoration: none; /* Убираем подчеркивание с ссылок */
+    color: #007bff; /* Синий цвет текста */
+    transition: color 0.3s; /* Плавный переход для цвета текста */
+}
+
+header ul.nav li a:hover {
+    color: #0056b3; /* Темный цвет при наведении */
+}
+
+header ul.nav li a:active {
+    color: #004085; /* Еще более темный цвет при нажатии */
+}
+
+header .logo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header .presentation {
+    margin: 50px 0;
+    background: url('./img/Минифон.png') no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #bcbcbc;
+    position: relative;
+    
+    border: 4px solid #007bff; /* Устанавливаем синюю обводку */
+    border-radius: 10px; /* Скругляем углы */
+    overflow: hidden; /* Скрываем лишние части содержимого, если они выходят за пределы границ */
+}
+
+header .presentation::after {
+    content: 'Учет пк каждого пользователя!';
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#Reg {
+    text-align: center;
+}
+#Au {
+    text-align: center;
+}
+#Wel {
+    text-align: center;
+}
+#Panel {
+    text-align: center;
+}
+
+form {
+    background: #fff; 
+    padding:50px; /* Отступы внутри формы */
+    border-radius: 5px; /* Скругленные углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+input {
+    width: 100%; /* Полная ширина */
+    padding: 10px; /* Отступы внутри поля */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+}
+
+button {
+    width: 105%; 
+    padding: 10px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #0056b3; /* Темный цвет при наведении */
+}
+
+#btn1, #btn2{
+    width: 150px; /* Установите желаемую ширину кнопки */
+    padding: 8px; /* Уменьшите отступы внутри кнопки */
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    font-size: 14px; 
+}
+
+#btn3 {
+    justify-content: space-between;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+p, #center{
+    text-align: center; 
+    margin-top: 10px;
+}
+
+#AboutUs, #Con, #Sos, #Stolb, #ssa{
+    text-align: center;
+}
+#Knopki, #Lol {
+    justify-content: space-between;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+#Knopki2 {
+    justify-content: space-between;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+#Knopki3 {
+    justify-content: space-between;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+#Stol {
+    border-collapse: collapse; 
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+#Stol th, #Stol td {
+    border: 1px solid #007bff; 
+    padding: 10px; 
+    text-align: left; 
+}
+
+#Stol th {
+    background-color: #f2f2f2; 
+    font-weight: bold; 
+}
+
+#Stol tr:hover {
+    background-color: #f5f5f5; 
+}
